@@ -1,0 +1,15 @@
+Curate SVRT images for 23 tasks
+
+train single model per task
+train one model for many tasks
+
+
+try different model architectures
+try varying the amount of training data
+
+use keras models and simple keras code VS interpretability framework code
+
+Considerations:
+cross validation
+train - validation - test
+multiple trials and plot STD and Mean
