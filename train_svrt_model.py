@@ -133,7 +133,7 @@ if __name__ == "__main__":
             eval_stats = model_instance.EvaluateModel(val_x, val_y, model_train_params["batch_size"])
             
         with open(oputput_file_name , "a") as f:
-            f.write(",".join([str(train_data_size),model_name,str(cross_fold_i), str(learning_rate), str(training_stats["accuracy_after_training"][1]), str(eval_stats[1])] ) + "\n" )
+            f.write(",".join([str(learning_rate),str(train_data_size),model_name,str(cross_fold_i), str(training_stats["accuracy_after_training"][1]), str(eval_stats[1])] ) + "\n" )
         
         dataset_tool.CreateNewValidationFold()
 

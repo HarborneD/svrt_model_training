@@ -13,7 +13,7 @@ required_output_files.sort()
 
 problem_results = {}
 
-column_headers = ["training_data_size","architecture","fold_index","accuracy_after_training","accuracy_of_best_weights"]
+column_headers = ["learning_rate","training_data_size","architecture","fold_index","accuracy_after_training","accuracy_of_best_weights"]
 
 for problem_file in required_output_files:
     file_path = os.path.join(output_folder, problem_file)
@@ -31,7 +31,7 @@ for problem_file in required_output_files:
 problem_numbers = list(range(1,24))
 
 model_name = "vgg16"
-training_data_size = "1000"
+training_data_size = "2000"
 
 
 accuracies = []
